@@ -37,7 +37,5 @@ document.addEventListener("DOMContentLoaded", () => {
    darkSwitch.addEventListener("click", () => {
       document.documentElement.classList.toggle("darkmode");
       document.body.classList.toggle("darkmode");
-      btnHero.classList.toggle("btn-primary");
-      btnHero.classList.toggle("btn-darken")
    });
 });
