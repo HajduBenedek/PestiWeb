@@ -559,3 +559,20 @@ video {
 .timeline {
   font-family: "Poppins", sans-serif;
 }
+
+.reference-card {
+  transition: all ease-in-out 0.3s;
+}
+
+.reference-card:hover {
+  transform: translateY(-6px);
+}
+
+#Reference .row>* {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+  margin-top: var(--bs-gutter-y);
+}
