@@ -482,7 +482,7 @@ video {
   content: "";
   position: absolute;
   height: 36px;
-  border-right: 2px dashed #dee2e6;
+  border-right: 2px dashed #e9ecef;
   top: 0;
 }
 
@@ -545,7 +545,21 @@ video {
 }
 
 .btn-primary {
-  background-color: #7E30E1;
+  background-color: #7E30E1 !important;
+}
+
+.btn-primary:hover {
+  background-color: #802af1 !important;
+}
+
+.btn-primary:active {
+  background-color: #6122b4 !important;
+}
+
+.btn:focus-visible {
+  background-color: #7E30E1 !important;
+  border-color: #7E30E1 !important;
+  box-shadow: none !important;
 }
 
 .underline {
@@ -575,4 +589,8 @@ video {
   padding-right: 0;
   padding-left: 0;
   margin-top: var(--bs-gutter-y);
+}
+
+.bg-soft-warning {
+  background-color: rgba(126, 48, 225, 0.75) !important;
 }
