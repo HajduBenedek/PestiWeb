@@ -33,9 +33,11 @@ window.addEventListener("resize", () => {
 // Dark and Light Mode on Switch Click
 document.addEventListener("DOMContentLoaded", () => {
    const darkSwitch = document.getElementById("switch");
+   const timeline = document.getElementById("timeline");
 
    darkSwitch.addEventListener("click", () => {
       document.documentElement.classList.toggle("darkmode");
       document.body.classList.toggle("darkmode");
+      timeline.classList.toggle("text-white");
    });
 });

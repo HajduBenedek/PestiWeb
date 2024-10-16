@@ -504,6 +504,10 @@ video {
   top: 0;
 }
 
+.card.background-trans{
+  background-color: transparent;
+}
+
 .hori-timeline .events .event-list .event-date {
   position: absolute;
   top: 38px;
