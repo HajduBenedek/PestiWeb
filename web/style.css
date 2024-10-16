@@ -41,7 +41,9 @@ html {
   box-sizing: inherit;
   scroll-behavior: smooth;
   height: -webkit-fill-available;
+  overflow-x: hidden;
 }
+
 
 body {
   /*font-family: "Poppins", sans-serif;*/
@@ -97,6 +99,14 @@ video {
   height: auto;
   margin: 0 auto;
   padding: 0 1.25rem;
+}
+
+.menu-item{
+  transition: all 0.1s ease-in-out;
+}
+
+.menu-item:hover{
+  color:#7E30E1;
 }
 
 .paragraph {
@@ -430,6 +440,14 @@ video {
   -o-object-fit: cover;
   object-fit: cover;
   justify-self: center;
+}
+
+.svg-image{
+    max-width: 25rem;
+    height: auto;
+    -o-object-fit: cover;
+    object-fit: cover;
+    justify-self: center;
 }
 
 @media only screen and (min-width: 48rem) {
