@@ -101,12 +101,12 @@ video {
   padding: 0 1.25rem;
 }
 
-.menu-item{
+.menu-item {
   transition: all 0.1s ease-in-out;
 }
 
-.menu-item:hover{
-  color:#7E30E1;
+.menu-item:hover {
+  color: #7E30E1;
 }
 
 .paragraph {
@@ -442,12 +442,12 @@ video {
   justify-self: center;
 }
 
-.svg-image{
-    max-width: 25rem;
-    height: auto;
-    -o-object-fit: cover;
-    object-fit: cover;
-    justify-self: center;
+.svg-image {
+  max-width: 25rem;
+  height: auto;
+  -o-object-fit: cover;
+  object-fit: cover;
+  justify-self: center;
 }
 
 @media only screen and (min-width: 48rem) {
@@ -504,7 +504,7 @@ video {
   top: 0;
 }
 
-.card.background-trans{
+.card.background-trans {
   background-color: transparent;
 }
 
@@ -614,5 +614,17 @@ video {
 }
 
 .bg-soft-warning {
-  background-color: rgba(126, 48, 225, 0.75) !important;
+  background-color: rgba(126, 48, 225, 1) !important;
+}
+
+.card {
+  --bs-card-bg: transparent;
+}
+
+body.darkmode .card {
+  color: #fff;
+}
+
+.Section-Services a {
+  border: 2px solid rgba(126, 48, 225, 1);
 }
