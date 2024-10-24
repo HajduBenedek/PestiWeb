@@ -443,7 +443,7 @@ video {
 }
 
 .svg-image {
-  max-width: 25rem;
+  max-width: 28rem;
   height: auto;
   -o-object-fit: cover;
   object-fit: cover;
@@ -625,6 +625,35 @@ body.darkmode .card {
   color: #fff;
 }
 
+body.darkmode .shadow {
+  box-shadow: 0 0.5rem 1rem rgba(126, 48, 255, 0.15) !important;
+}
+
 .Section-Services a {
   border: 2px solid rgba(126, 48, 225, 1);
+}
+
+.positionIMGStart {
+  display: flex;
+  justify-content: start;
+}
+
+.positionIMGEnd {
+  display: flex;
+  justify-content: end;
+}
+
+@media (max-width: 991px) {
+  .textContent {
+    text-align: center;
+  }
+
+  .positionIMGStart,
+  .positionIMGEnd {
+    justify-content: center;
+  }
+
+  .svg-image {
+    max-width: 90%;
+  }
 }

@@ -29,10 +29,10 @@
             </div>
             <div class="menu" id="menu">
                 <ul class="menu-inner nav">
-                    <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Feature</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Pricing</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Support</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">Főoldal</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">Szolgáltatások</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">Referenciák</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">Kapcsolat</a></li>
                 </ul>
             </div>
             <button class="switch" id="switch">
@@ -66,7 +66,7 @@
             <div class="underline"></div>
         </div>
 
-        <div class="row d-flex justify-content-center gap-4">
+        <div class="row d-flex justify-content-center gap-4" id="ServicesContent">
             <a href="#!" class="card card-border-primary rounded-4" style="width:18rem">
                 <div class="card-body d-flex flex-column gap-4 text-center">
                     <div>
@@ -148,9 +148,14 @@
 
     <section class="py-lg-16 py-6">
         <div class="container">
-            <div class="row d-flex flex-lg-row-reverse align-items-center justify-content-evenly mt-5 mb-5">
-                <div class="col-xxl-5  col-xl-6 col-lg-6 col-12">
-                    <div>
+            <div class="row align-items-center mt-5 mb-5">
+                <div class="col-lg-6 mb-4 mb-lg-0 order-lg-1">
+                    <div class="mt-12 mt-lg-0 mt-5 positionIMGEnd">
+                        <img src="src/web.jpg" alt="online course" class="img-fluid rounded-4 svg-image shadow z-1">
+                    </div>
+                </div>
+                <div class="col-lg-6 p-lg-6">
+                    <div class="textContent">
                         <h1 class="display-4 fw-bold mb-3">Weboldal készítés</h1>
                         <p class="lead mb-4">Egyedi weboldalakat tervezünk, amelyek tükrözik az ügyfeleink egyedi
                             igényeit és márkáját. A legújabb technológiák felhasználásával biztosítjuk, hogy weboldalad
@@ -158,21 +163,15 @@
                         <a href="#!" class="btn btn-primary btn-lg">Felkeresés</a>
                     </div>
                 </div>
-                <div class="col-xxl-5 offset-xxl-1 col-xl-6 col-lg-6 col-12 d-lg-flex justify-content-center">
-                    <div class="mt-12 mt-lg-0 position-relative mt-5">
-                        <img src="src/web.svg" alt="online course"
-                            class="img-fluid rounded-4 mx-auto svg-image z-1 position-relative">
+            </div>
+            <div class="row align-items-center mt-5 mb-5">
+                <div class="col-lg-6 mb-4 mb-lg-0 ">
+                    <div class="mt-12 mt-lg-0 positionIMGStart">
+                        <img src="src/webshop.jpg" alt="online course" class="img-fluid rounded-4 svg-image shadow z-1">
                     </div>
                 </div>
-
-                <div class="col-xxl-5 offset-xxl-1 col-xl-6 col-lg-6 col-12 d-lg-flex justify-content-center mt-5">
-                    <div class="mt-12 mt-lg-0 position-relative">
-                        <img src="src/webshop.svg" alt="online course"
-                            class="img-fluid rounded-4 mx-auto svg-image z-1 position-relative">
-                    </div>
-                </div>
-                <div class="col-xxl-5 col-xl-6 col-lg-6 col-12 mt-5 mx-auto">
-                    <div>
+                <div class="col-lg-6 p-lg-6">
+                    <div class="textContent">
                         <h1 class="display-4 fw-bold mb-3">Webáruház készítés</h1>
                         <p class="lead mb-4">Teljes körű webáruház megoldásokat kínálunk, beleértve az egyszerű
                             termékmenedzsmentet, fizetési integrációkat, és a vásárlói élményt optimalizáló funkciókat.
