@@ -6,15 +6,16 @@ body {
     line-height: 1.5;
     color: var(--color-black-400);
     background-color: var(--color-white-100);
-  }
-  body.darkmode {
+}
+
+body.darkmode {
     color: var(--color-white-100);
     background-color: var(--color-black-400);
-  }
+}
 
-  .darkmode .header {
+.darkmode .header {
     background-color: var(--color-black-400);
-  }
+}
 
 .card {
     border-radius: 1rem;
@@ -29,17 +30,21 @@ body {
     margin-bottom: 1rem;
     color: black;
 }
+
 .btn-contact {
     background-color: black;
     border-color: black;
     color: white;
     transition: all 0.3s ease;
 }
+
 .btn-contact:hover {
     background-color: #7E30E1;
     border-color: #7E30E1;
     transform: translateY(-2px);
+    color: white;
 }
+
 .floating-icon {
     position: fixed;
     bottom: 20px;
@@ -49,6 +54,16 @@ body {
     cursor: pointer;
     transition: transform 0.3s ease;
 }
+
 .floating-icon:hover {
     transform: scale(1.1);
+}
+
+body.darkmode .contact .card {
+    background-color: #7E30E1;
+    filter: drop-shadow(0 0 0.75rem #7E30E1);
+}
+
+body.darkmode .contact .card i {
+    color: #fff
 }

@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Pestiweb: A modern webfejlesztés</title>
+    <link rel="icon" type="image/x-icon" href="src/logopng.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -29,9 +30,9 @@
             </div>
             <div class="menu" id="menu">
                 <ul class="menu-inner nav">
-                    <li class="menu-item"><a href="#" class="menu-link">Főoldal</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Szolgáltatások</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Referenciák</a></li>
+                    <li class="menu-item"><a href="#BannerSection" class="menu-link">Főoldal</a></li>
+                    <li class="menu-item"><a href="#Services" class="menu-link">Szolgáltatások</a></li>
+                    <li class="menu-item"><a href="#Reference" class="menu-link">Referenciák</a></li>
                     <li class="menu-item"><a href="contact.html" class="menu-link">Kapcsolat</a></li>
                 </ul>
             </div>
@@ -41,7 +42,7 @@
             </button>
         </nav>
     </header>
-    <section class="section banner banner-section">
+    <section class="section banner banner-section" id="BannerSection">
         <div class="container banner-column">
             <img class="banner-image" src="https://i.ibb.co/sVqYmS2/Illustration.png" alt="Illustration">
             <div class="banner-inner">
@@ -60,14 +61,14 @@
         </div>
     </section>
 
-    <section class="Section-Services">
+    <section class="Section-Services" id="Services">
         <div class="Section-Title-Container mb-5 mt-5">
             <h1 class="text-center display-2 fw-semibold">Szolgáltatásaink</h1>
             <div class="underline"></div>
         </div>
 
         <div class="row d-flex justify-content-center gap-4" id="ServicesContent">
-            <a href="#!" class="card card-border-primary rounded-4" style="width:18rem">
+            <a href="#!" class="card card-border-primary rounded-4" style="width:18rem; opacity: 0;">
                 <div class="card-body d-flex flex-column gap-4 text-center">
                     <div>
                         <div class="icon-shape icon-xxl bg-light-primary rounded-circle">
@@ -86,7 +87,7 @@
                 </div>
             </a>
 
-            <a href="#!" class="card card-border-primary rounded-4" style="width:18rem">
+            <a href="#!" class="card card-border-primary rounded-4" style="width:18rem; opacity: 0;">
                 <div class="card-body d-flex flex-column gap-4 text-center">
                     <div>
                         <div class="icon-shape icon-xxl bg-light-primary rounded-circle">
@@ -105,7 +106,7 @@
             </a>
 
 
-            <a href="#!" class="card card-border-primary rounded-4" style="width:18rem">
+            <a href="#!" class="card card-border-primary rounded-4" style="width:18rem; opacity: 0;">
                 <div class="card-body d-flex flex-column gap-4 text-center">
                     <div>
                         <div class="icon-shape icon-xxl bg-light-primary rounded-circle">
@@ -124,7 +125,7 @@
             </a>
 
 
-            <a href="#!" class="card card-border-primary rounded-4" style="width:18rem">
+            <a href="#!" class="card card-border-primary rounded-4" style="width:18rem; opacity: 0;">
                 <div class="card-body d-flex flex-column gap-4 text-center">
                     <div>
                         <div class="icon-shape icon-xxl bg-light-primary rounded-circle">
@@ -151,32 +152,34 @@
             <div class="row align-items-center mt-5 mb-5">
                 <div class="col-lg-6 mb-4 mb-lg-0 order-lg-1">
                     <div class="mt-12 mt-lg-0 mt-5 positionIMGEnd">
-                        <img src="src/web.jpg" alt="online course" class="img-fluid rounded-4 svg-image shadow z-1">
+                        <img src="src/web.jpg" id="webIMG" alt="online course"
+                            class="img-fluid rounded-4 svg-image shadow z-1">
                     </div>
                 </div>
                 <div class="col-lg-6 p-lg-6">
-                    <div class="textContent">
+                    <div class="textContent" id="WebText">
                         <h1 class="display-4 fw-bold mb-3">Weboldal készítés</h1>
                         <p class="lead mb-4">Egyedi weboldalakat tervezünk, amelyek tükrözik az ügyfeleink egyedi
                             igényeit és márkáját. A legújabb technológiák felhasználásával biztosítjuk, hogy weboldalad
                             gyors, reszponzív és SEO-barát legyen.</p>
-                        <a href="#!" class="btn btn-primary btn-lg">Felkeresés</a>
+                        <a href="#!" class="btn btn-primary btn-lg" style="opacity: 0;">Felkeresés</a>
                     </div>
                 </div>
             </div>
             <div class="row align-items-center mt-5 mb-5">
                 <div class="col-lg-6 mb-4 mb-lg-0 ">
                     <div class="mt-12 mt-lg-0 positionIMGStart">
-                        <img src="src/webshop.jpg" alt="online course" class="img-fluid rounded-4 svg-image shadow z-1">
+                        <img src="src/webshop.jpg" id="webShopIMG" alt="online course"
+                            class="img-fluid rounded-4 svg-image shadow z-1">
                     </div>
                 </div>
                 <div class="col-lg-6 p-lg-6">
-                    <div class="textContent">
+                    <div class="textContent" id="WebShopText">
                         <h1 class="display-4 fw-bold mb-3">Webáruház készítés</h1>
                         <p class="lead mb-4">Teljes körű webáruház megoldásokat kínálunk, beleértve az egyszerű
                             termékmenedzsmentet, fizetési integrációkat, és a vásárlói élményt optimalizáló funkciókat.
                         </p>
-                        <a href="#!" class="btn btn-primary btn-lg">Felkeresés</a>
+                        <a href="#!" class="btn btn-primary btn-lg" style="opacity: 0;">Felkeresés</a>
                     </div>
                 </div>
 
@@ -190,16 +193,16 @@
                 <div class="col-lg-12">
                     <div class="card background-trans border-0 shadow-none" id="timeline">
                         <div class="card-body">
-                            <h2 class="card-title text-center display-2 fw-semibold">Munkafolyamatunk</h2>
-                            <div class="underline mb-3"></div>
+                            <h2 class="card-title text-center display-2 fw-semibold" id="tlTitle">Munkafolyamatunk</h2>
+                            <div class="underline mb-3" id="tlUnderline"></div>
 
-                            <p class="paragraph text-center mb-5">
+                            <p class="paragraph text-center mb-5" id="tlParagh">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, voluptates tempora
                                 nostrum ducimus eum sit iste at? Amet molestias iste cumque corrupti unde provident,
                                 recusandae ab architecto minus, nulla harum?
                             </p>
 
-                            <div class="hori-timeline" dir="ltr">
+                            <div class="hori-timeline" dir="ltr" id="timelineGSAP">
                                 <ul class="list-inline events">
                                     <li class="list-inline-item event-list">
                                         <div class="px-4">
@@ -243,18 +246,18 @@
     </section>
 
     <section class="container" id="Reference">
-        <div class="Section-Title-Container mb-5 mt-3">
+        <div class="Section-Title-Container mb-5 mt-3" id="ReferenceTitle">
             <h1 class="text-center display-2 fw-semibold">Referenciáink</h1>
             <div class="underline"></div>
         </div>
 
-        <div class="row d-flex justify-content-evenly align-items-center gap-2">
-            <div class="card border shadow reference-card" style="width:18rem">
+        <div class="row d-flex justify-content-evenly align-items-center gap-2" id="ReferenceCards">
+            <div class="card border shadow reference-card" style="width:18rem; opacity:0">
                 <a href="https://zeniche.hu/"><img src="src/zeniche.png" alt="" class="card-img img-fluid"></a>
             </div>
 
-            <div class="card border shadow reference-card" style="width:18rem">
-                <a href="https://zeniche.hu/"><img src="src/gula.png" alt="" class="card-img img-fluid"></a>
+            <div class="card border shadow reference-card" style="width:18rem;opacity:0">
+                <a href="https://www.gulaszerviz.hu/"><img src="src/gula.png" alt="" class="card-img img-fluid"></a>
             </div>
 
         </div>
