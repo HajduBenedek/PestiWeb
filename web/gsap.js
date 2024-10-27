@@ -60,7 +60,7 @@ const ContentTL = gsap.timeline({
     }
 })
 
-ContentTL
+ServicesTL
     .from(webIMG, { y: -50, opacity: 0, duration: 0.5 })
     .from(webH1, { y: -50, opacity: 0, duration: 0.5 }, "-=0.25")
     .from(webParagh, { y: -50, opacity: 0, duration: 0.5 }, "-=0.25")
@@ -106,6 +106,7 @@ ReferenceTL
     .from(ReferenceH1, { y: -50, opacity: 0, duration: 0.5 })
     .from(ReferenceUnderline, { width: 0, opacity: 0, duration: 0.5 }, "-=0.25")
     .to(ReferenceCards[0], { opacity: 1, duration: 0.5 }, "-=0.25")
-    .to(ReferenceCards[1], { opacity: 1, duration: 0.5 }, "-=0.25");
+    .to(ReferenceCards[1], { opacity: 1, duration: 0.5 }, "-=0.25")
+    .to(ReferenceCards[2], { opacity: 1, duration: 0.5 }, "-=0.25");
 
 
