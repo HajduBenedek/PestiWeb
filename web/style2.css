@@ -67,3 +67,7 @@ body.darkmode .contact .card {
 body.darkmode .contact .card i {
     color: #fff
 }
+
+.mobil-decoration {
+    text-decoration: none;
+}

@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <title>Pestiweb: A modern webfejlesztés</title>
     <link rel="icon" type="image/x-icon" href="src/logopng.png">
-    <meta name="keywords" content="webfejlesztés, weboldalkészítés, reszponzív dizájn, e-kereskedelem, SEO optimalizálás, egyedi alkalmazások, frontend fejlesztés, backend fejlesztés, webdesign, mobilbarát weboldalak, HTML5, CSS3, JavaScript, React, Angular, Vue.js, Node.js, PHP, Python, Ruby on Rails, WordPress fejlesztés, Magento fejlesztés, Shopify fejlesztés, WooCommerce, PrestaShop, API integráció, adatbázis-tervezés, MySQL, MongoDB, PostgreSQL, felhő alapú fejlesztés, AWS, Google Cloud, Azure, teljesítményoptimalizálás, gyors betöltési idő, biztonságos weboldalak, SSL tanúsítvány, GDPR megfelelőség, akadálymentesítés, UX tervezés, UI dizájn, grafikai tervezés, logó tervezés, branding, tartalomkezelő rendszerek, CMS fejlesztés, többnyelvű weboldalak, keresőoptimalizálás, helyi SEO, technikai SEO, linképítés, közösségi média integráció, Facebook, Instagram, Twitter, LinkedIn, Google Analytics, Google Tag Manager, konverzióoptimalizálás, A/B tesztelés, email marketing integráció, hírlevél feliratkozás, chatbot fejlesztés, mesterséges intelligencia, gépi tanulás">
+    <meta name="keywords"
+        content="webfejlesztés, weboldalkészítés, reszponzív dizájn, e-kereskedelem, SEO optimalizálás, egyedi alkalmazások, frontend fejlesztés, backend fejlesztés, webdesign, mobilbarát weboldalak, HTML5, CSS3, JavaScript, React, Angular, Vue.js, Node.js, PHP, Python, Ruby on Rails, WordPress fejlesztés, Magento fejlesztés, Shopify fejlesztés, WooCommerce, PrestaShop, API integráció, adatbázis-tervezés, MySQL, MongoDB, PostgreSQL, felhő alapú fejlesztés, AWS, Google Cloud, Azure, teljesítményoptimalizálás, gyors betöltési idő, biztonságos weboldalak, SSL tanúsítvány, GDPR megfelelőség, akadálymentesítés, UX tervezés, UI dizájn, grafikai tervezés, logó tervezés, branding, tartalomkezelő rendszerek, CMS fejlesztés, többnyelvű weboldalak, keresőoptimalizálás, helyi SEO, technikai SEO, linképítés, közösségi média integráció, Facebook, Instagram, Twitter, LinkedIn, Google Analytics, Google Tag Manager, konverzióoptimalizálás, A/B tesztelés, email marketing integráció, hírlevél feliratkozás, chatbot fejlesztés, mesterséges intelligencia, gépi tanulás">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -68,7 +69,8 @@
         </div>
 
         <div class="row d-flex justify-content-center gap-4" id="ServicesContent">
-            <a href="#!" class="card card-border-primary rounded-4" style="width:18rem; opacity: 0;">
+            <a href="#!" class="card card-border-primary rounded-4" data-bs-toggle="modal"
+                data-bs-target="#WebfejlesztésModal" style="width:18rem; opacity: 0;">
                 <div class="card-body d-flex flex-column gap-4 text-center">
                     <div>
                         <div class="icon-shape icon-xxl bg-light-primary rounded-circle">
@@ -81,13 +83,29 @@
                         </div>
                     </div>
                     <div>
-                        <h3 class="mb-2">Webfejlesztés</h3>
-                        <span>21 Mentors</span>
+                        <h3 class="mb-2">Weboldal fejlesztés</h3>
+                        <span>Kattintson további információkért!</span>
                     </div>
                 </div>
             </a>
 
-            <a href="#!" class="card card-border-primary rounded-4" style="width:18rem; opacity: 0;">
+            <div class="modal fade" id="WebfejlesztésModal" tabindex="-1" aria-labelledby="WebfejlesztésModal"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="WebfejlesztésModal">Webfejlesztés</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            ...
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#!" class="card card-border-primary rounded-4" data-bs-toggle="modal"
+                data-bs-target="#WebshopFejlesztes" style="width:18rem; opacity: 0;">
                 <div class="card-body d-flex flex-column gap-4 text-center">
                     <div>
                         <div class="icon-shape icon-xxl bg-light-primary rounded-circle">
@@ -105,8 +123,23 @@
                 </div>
             </a>
 
+            <div class="modal fade" id="WebshopFejlesztes" tabindex="-1" aria-labelledby="Webshop Fejlesztés"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="WebshopFejlesztesModal">Webshop fejlesztés</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            ...
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-            <a href="#!" class="card card-border-primary rounded-4" style="width:18rem; opacity: 0;">
+            <a href="#!" class="card card-border-primary rounded-4" data-bs-toggle="modal"
+                data-bs-target="#SEOOptimalizálás" style="width:18rem; opacity: 0;">
                 <div class="card-body d-flex flex-column gap-4 text-center">
                     <div>
                         <div class="icon-shape icon-xxl bg-light-primary rounded-circle">
@@ -124,8 +157,23 @@
                 </div>
             </a>
 
+            <div class="modal fade" id="SEOOptimalizálás" tabindex="-1" aria-labelledby="SEO Optimalizálás"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="SEOOptimalizálásModal">SEO optimalizálás</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            ...
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-            <a href="#!" class="card card-border-primary rounded-4" style="width:18rem; opacity: 0;">
+            <a href="#!" class="card card-border-primary rounded-4" data-bs-toggle="modal"
+                data-bs-target="#EmailRendszer" style="width:18rem; opacity: 0;">
                 <div class="card-body d-flex flex-column gap-4 text-center">
                     <div>
                         <div class="icon-shape icon-xxl bg-light-primary rounded-circle">
@@ -144,6 +192,22 @@
                     </div>
                 </div>
             </a>
+
+            <div class="modal fade" id="EmailRendszer" tabindex="-1" aria-labelledby="Email Rendszer"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="EmailRendszerModal">Saját emailrendszer</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            ...
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 
@@ -282,13 +346,13 @@
     <script src="gsap.js"></script>
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-3XMRVEKZ5B"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'G-3XMRVEKZ5B');
-</script>
+        gtag('config', 'G-3XMRVEKZ5B');
+    </script>
 </body>
 
 </html>
