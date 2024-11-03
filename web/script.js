@@ -1,3 +1,15 @@
+let ViewMode;
+
+console.log(sessionStorage.getItem("ViewMode"))
+
+if (sessionStorage.getItem("ViewMode") == null) {
+   ViewMode = 0
+
+} else {
+   ViewMode = parseInt(sessionStorage.getItem("ViewMode"));
+}
+
+
 const navbarMenu = document.getElementById("menu");
 const burgerMenu = document.getElementById("burger");
 const headerMenu = document.getElementById("header");
@@ -30,14 +42,31 @@ window.addEventListener("resize", () => {
    }
 });
 
+
+
 // Dark and Light Mode on Switch Click
+
 document.addEventListener("DOMContentLoaded", () => {
    const darkSwitch = document.getElementById("switch");
    const timeline = document.getElementById("timeline");
 
-   darkSwitch.addEventListener("click", () => {
+   if (ViewMode == 1) {
       document.documentElement.classList.toggle("darkmode");
       document.body.classList.toggle("darkmode");
-      timeline.classList.toggle("text-white");
+   }
+
+   darkSwitch.addEventListener("click", () => {
+
+      if (ViewMode == 0) {
+         ViewMode = 1;
+         sessionStorage.setItem("ViewMode", ViewMode);
+      } else {
+         ViewMode = 0;
+         sessionStorage.setItem("ViewMode", ViewMode);
+      }
+
+      document.documentElement.classList.toggle("darkmode");
+      document.body.classList.toggle("darkmode");
+      //timeline.classList.toggle("text-white");
    });
 });
