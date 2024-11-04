@@ -71,23 +71,17 @@ ServicesTL
     .to(webShopBtn, { opacity: 1, duration: 0.5 }, "-=0.25")
 
 
-const tlTitle = document.getElementById("tlTitle");
-const tlUnderline = document.getElementById("tlUnderline");
-const tlParagh = document.getElementById("tlParagh");
-const timelineGSAP = document.getElementById("timelineGSAP");
+//const tlTitle = document.getElementById("tlTitle");
+//const tlUnderline = document.getElementById("tlUnderline");
+//const tlParagh = document.getElementById("tlParagh");
+//const timelineGSAP = document.getElementById("timelineGSAP");
 
 
-const timelineTL = gsap.timeline({
-    scrollTrigger: {
-        trigger: "#timeline"
-    }
-})
+//const timelineTL = gsap.timeline({
+//scrollTrigger: {
+//trigger: "#timeline"}})
 
-timelineTL
-    .from(tlTitle, { y: -50, opacity: 0, duration: 0.5 })
-    .from(tlUnderline, { width: 0, opacity: 0, duration: 0.5 }, "-=0.25")
-    .from(tlParagh, { y: -50, opacity: 0, duration: 0.5 }, "-=0.25")
-    .from(timelineGSAP, { y: -50, opacity: 0, duration: 0.5 }, "-=0.25");
+//timelineTL.from(tlTitle, { y: -50, opacity: 0, duration: 0.5 }).from(tlUnderline, { width: 0, opacity: 0, duration: 0.5 }, "-=0.25").from(tlParagh, { y: -50, opacity: 0, duration: 0.5 }, "-=0.25").from(timelineGSAP, { y: -50, opacity: 0, duration: 0.5 }, "-=0.25");
 
 
 const ReferenceTitleHelper = document.getElementById("ReferenceTitle");
