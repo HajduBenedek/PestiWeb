@@ -49,10 +49,15 @@ window.addEventListener("resize", () => {
 document.addEventListener("DOMContentLoaded", () => {
    const darkSwitch = document.getElementById("switch");
    const timeline = document.getElementById("timeline");
+   const btnCloses = document.querySelectorAll(".btn-close");
 
    if (ViewMode == 1) {
       document.documentElement.classList.toggle("darkmode");
       document.body.classList.toggle("darkmode");
+
+         btnCloses.forEach(btn => {
+            btn.classList.add("btn-close-white")
+         });
    }
 
    darkSwitch.addEventListener("click", () => {
@@ -66,6 +71,11 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
       document.documentElement.classList.toggle("darkmode");
+      
+      btnCloses.forEach(btn => {
+            btn.classList.add("btn-close-white")
+      });
+      
       document.body.classList.toggle("darkmode");
       //timeline.classList.toggle("text-white");
    });

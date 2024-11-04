@@ -565,6 +565,11 @@ video {
   transform: translateY(-6px);
 }
 
+body.darkmode .modal-content{
+  background-color: var(--color-black-400);
+}
+
+
 .btn-primary {
   background-color: #7E30E1 !important;
 }
