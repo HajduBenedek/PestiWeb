@@ -50,14 +50,23 @@ document.addEventListener("DOMContentLoaded", () => {
    const darkSwitch = document.getElementById("switch");
    const timeline = document.getElementById("timeline");
    const btnCloses = document.querySelectorAll(".btn-close");
+   const modalContents = document.querySelectorAll(".modal-content");
 
    if (ViewMode == 1) {
       document.documentElement.classList.toggle("darkmode");
       document.body.classList.toggle("darkmode");
 
-         btnCloses.forEach(btn => {
-            btn.classList.add("btn-close-white")
-         });
+      modalContents.forEach(modal => {
+         modal.style.backgroundColor = "#0b1423";
+      })
+
+      btnCloses.forEach(btn => {
+         btn.classList.add("btn-close-white")
+      });
+   } else {
+      modalContents.forEach(modal => {
+         modal.style.backgroundColor = "#fff";
+      })
    }
 
    darkSwitch.addEventListener("click", () => {
@@ -71,11 +80,11 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
       document.documentElement.classList.toggle("darkmode");
-      
+
       btnCloses.forEach(btn => {
-            btn.classList.add("btn-close-white")
+         btn.classList.add("btn-close-white")
       });
-      
+
       document.body.classList.toggle("darkmode");
       //timeline.classList.toggle("text-white");
    });
