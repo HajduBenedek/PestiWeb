@@ -89,3 +89,28 @@ document.addEventListener("DOMContentLoaded", () => {
       //timeline.classList.toggle("text-white");
    });
 });
+
+//Cooike
+
+function checkCookieConsent() {
+   if (localStorage.getItem('cookieConsent') !== 'accepted') {
+       const popup = document.getElementById('cookie-popup');
+       popup.style.display = 'flex';
+       setTimeout(() => {
+           popup.style.opacity = '1';
+           popup.style.transform = 'translateY(0)';
+       }, 1);
+   }
+}
+
+function acceptCookies() {
+   localStorage.setItem('cookieConsent', 'accepted');
+   const popup = document.getElementById('cookie-popup');
+   popup.style.opacity = '0';
+   popup.style.transform = 'translateY(20px)';
+   setTimeout(() => {
+       popup.style.display = 'none';
+   }, 1);
+}
+
+window.onload = checkCookieConsent;

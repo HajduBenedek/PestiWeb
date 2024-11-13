@@ -665,3 +665,45 @@ body.darkmode .shadow {
 .reference-card {
   transition: all ease-in-out 0.3s;
 }
+
+#cookie-popup {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #f8f8ff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(107, 70, 193, 0.2);
+  display: flex;
+  align-items: center;
+  max-width: 400px;
+  transition: all 0.3s ease;
+  transform: translateX(20px);
+}
+#cookie-popup img {
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+}
+#cookie-popup p {
+  margin: 0 0 15px 0;
+  color: #4a4a4a;
+  line-height: 1.5;
+}
+#cookie-popup button {
+  background-color: #8a2be2;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+}
+#cookie-popup button:hover {
+  background-color: #9932cc;
+}
