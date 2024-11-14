@@ -1,7 +1,5 @@
 let ViewMode;
 
-console.log(sessionStorage.getItem("ViewMode"))
-
 if (sessionStorage.getItem("ViewMode") == null) {
    ViewMode = 0
 
@@ -94,12 +92,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function checkCookieConsent() {
    if (localStorage.getItem('cookieConsent') !== 'accepted') {
-       const popup = document.getElementById('cookie-popup');
-       popup.style.display = 'flex';
-       setTimeout(() => {
-           popup.style.opacity = '1';
-           popup.style.transform = 'translateY(0)';
-       }, 1);
+      const popup = document.getElementById('cookie-popup');
+      popup.style.display = 'flex';
+      setTimeout(() => {
+         popup.style.opacity = '1';
+         popup.style.transform = 'translateY(0)';
+      }, 1);
    }
 }
 
@@ -109,7 +107,7 @@ function acceptCookies() {
    popup.style.opacity = '0';
    popup.style.transform = 'translateY(20px)';
    setTimeout(() => {
-       popup.style.display = 'none';
+      popup.style.display = 'none';
    }, 1);
 }
 
