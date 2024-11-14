@@ -679,17 +679,21 @@ body.darkmode .shadow {
   max-width: 400px;
   transition: all 0.3s ease;
   transform: translateX(20px);
+  z-index: 100;
 }
+
 #cookie-popup img {
   width: 60px;
   height: 60px;
   margin-right: 20px;
 }
+
 #cookie-popup p {
   margin: 0 0 15px 0;
   color: #4a4a4a;
   line-height: 1.5;
 }
+
 #cookie-popup button {
   background-color: #8a2be2;
   color: white;
@@ -704,6 +708,16 @@ body.darkmode .shadow {
   border-radius: 25px;
   transition: background-color 0.3s ease;
 }
+
 #cookie-popup button:hover {
   background-color: #9932cc;
+}
+
+.modal-body {
+  font-family: "Roboto", serif;
+}
+
+
+.modal-body h6 {
+  font-family: "DM Mono", monospace;
 }
